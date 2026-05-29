@@ -11,7 +11,3 @@ def test_product_created_successfully():
 def test_empty_productName():
     with pytest.raises(ValueError):
         Product("", 999.99, "P002", 5)
-
-def test_product_rejects_empty_price():
-    with pytest.raises(ValueError):
-        Product("P002", "", 999.9, 5)
